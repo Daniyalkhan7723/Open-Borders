@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/guideWelcomeFragment">
+
+    <fragment
+        android:id="@+id/guideQuestionerFragment"
+        android:name="com.open.borders.views.fragments.guide.guideQuestions.GuideQuestionerFragment"
+        android:label="fragment_guide_questioner"
+        tools:layout="@layout/fragment_guide_questioner" >
+        <action
+            android:id="@+id/action_guideQuestionerFragment_to_scheduleConsultingFragment"
+            app:destination="@id/scheduleConsultingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/flatFeeFragment"
+        android:name="com.open.borders.views.fragments.flatFee.FlatFeeFragment"
+        android:label="consultation_fragment"
+        tools:layout="@layout/consultation_fragment" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.open.borders.views.fragments.accounts.accountsHome.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.open.borders.views.fragments.news.NewsFragment"
+        android:label="news_fragment"
+        tools:layout="@layout/news_fragment" />
+    <fragment
+        android:id="@+id/scheduleConsultingFragment"
+        android:name="com.open.borders.views.fragments.scheduleConsulting.ScheduleConsultingFragment"
+        android:label="tingFragment" />
+    <fragment
+        android:id="@+id/guideWelcomeFragment"
+        android:name="com.open.borders.views.fragments.guide.guideQuestions.GuideWelcomeFragment"
+        android:label="GuideWelcomeFragment" />
+</navigation>

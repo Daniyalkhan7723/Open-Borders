@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/answerLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_7sdp"
+    android:background="@drawable/actionlink_bg">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/answerTv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:fontFamily="@font/grotesk_pro_normal"
+        android:text="@string/no_i_am_not_a_green_card_holder"
+        android:textColor="@color/app_bg_color"
+        android:textSize="18sp"/>
+
+</LinearLayout>

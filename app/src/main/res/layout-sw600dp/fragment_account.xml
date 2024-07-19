@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_10sdp"
+    tools:context=".views.fragments.accounts.accountsHome.AccountFragment">
+
+    <LinearLayout
+        android:id="@+id/servicesHistoryId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_services_history" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:text="@string/services_history"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_7sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/accountDetailId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:src="@drawable/ic_account_new" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:text="@string/account_detail"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_7sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aboutUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:src="@drawable/ic_about_us"
+            android:tint="#827565" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:text="@string/about_us"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_7sdp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/updateYourPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:src="@drawable/icon_payment"
+            android:tint="#827565" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:text="@string/update_payment"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_7sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDeleteAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:src="@drawable/ic_icons8_trash_1" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:text="@string/delete_account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_7sdp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:src="@drawable/ic_logout" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:text="@string/logout"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_7sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:src="@drawable/ic_logout" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:text="@string/sign_in"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_7sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/popup_background"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:text="@string/select_date"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="13sp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:textColor="@color/black_80"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@drawable/popup_txt_view_background"/>
+
+<!--        <com.open.borders.thirdPartyModules.materialcalendarview.MaterialCalendarView-->
+<!--            android:id="@+id/calendarView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginHorizontal="@dimen/_20sdp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:mcv_selectionColor="@color/app_icon_bg_color_brown" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Select Month"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="14sp"-->
+<!--                app:fontFamily="@font/grotesk_pro_light" />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_bg_color"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/calender_header"
+                    layout="@layout/calender_header_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginVertical="@dimen/_15sdp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+
+                <include
+                    android:id="@+id/legendLayout"
+                    layout="@layout/calendar_day_legend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp" />
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmerFrameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <include layout="@layout/consultation_shimmer_layout" />
+                        <include layout="@layout/consultation_shimmer_layout" />
+                        <include layout="@layout/consultation_shimmer_layout" />
+                        <include layout="@layout/consultation_shimmer_layout" />
+
+
+                    </LinearLayout>
+
+                </com.facebook.shimmer.ShimmerFrameLayout>
+
+                <com.kizitonwose.calendarview.CalendarView
+                    android:id="@+id/exOneCalendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:visibility="gone"
+                    app:cv_dayViewResource="@layout/calender_day_layout"
+                    app:cv_inDateStyle="allMonths"
+                    app:cv_orientation="horizontal"
+                    app:cv_outDateStyle="endOfRow"
+                    app:cv_scrollMode="paged"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveDateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/save"
+            style="@style/button_style"/>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.activities.newsDetails.NewsDetailActivity">
+
+    <include
+        android:id="@+id/toolbarId"
+        layout="@layout/home_toolbar_layout"/>
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_margin="@dimen/_15sdp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <com.rishabhharit.roundedimageview.RoundedImageView-->
+<!--                android:id="@+id/mImageView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/_170sdp"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                app:cornerRadius="@dimen/_5sdp" />-->
+
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                android:id="@+id/dateId"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColorLink="@color/link_color"-->
+<!--                android:textColor="@color/black_36"-->
+<!--                android:fontFamily="@font/grotesk_pro_light"/>-->
+
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                android:id="@+id/titleId"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="@color/black_80"-->
+<!--                android:fontFamily="@font/grotesk_pro_light"/>-->
+
+<!--            <com.google.android.material.textview.MaterialTextView-->
+<!--                android:id="@+id/detailId"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="@dimen/_5sdp"-->
+<!--                android:textSize="14sp"-->
+<!--                android:lineSpacingExtra="@dimen/_3sdp"-->
+<!--                android:textColor="@color/black_70"-->
+<!--                android:fontFamily="@font/grotesk_pro_light"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+    <WebView
+        android:id="@+id/newsWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/shimmer_news_layout" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</LinearLayout>

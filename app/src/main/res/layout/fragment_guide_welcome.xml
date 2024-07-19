@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:id="@+id/questionLayout"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           tools:context=".views.fragments.guide.guideQuestions.GuideWelcomeFragment">
+
+<!--           <FrameLayout-->
+<!--               android:id="@+id/frameLayout"-->
+<!--               android:layout_width="wrap_content"-->
+<!--               android:layout_height="wrap_content">-->
+
+<!--               <ImageView-->
+<!--                   android:id="@+id/splashLogo"-->
+<!--                   android:layout_width="match_parent"-->
+<!--                   android:layout_height="@dimen/_150sdp"-->
+<!--                   android:layout_gravity="center_horizontal"-->
+<!--                   android:layout_marginHorizontal="@dimen/_25sdp"-->
+<!--                   android:layout_marginTop="@dimen/_18sdp"-->
+<!--                   android:src="@drawable/ic_splash_logo"-->
+<!--                   android:transitionName="splashLottie"-->
+<!--                   android:visibility="gone" />-->
+
+           <com.airbnb.lottie.LottieAnimationView
+               android:id="@+id/openBorder_logo"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_200sdp"
+               android:layout_gravity="center_horizontal"
+               android:scaleType="centerCrop"
+               android:padding="@dimen/_10sdp"
+               app:lottie_autoPlay="true"
+               app:lottie_loop="true"
+               app:lottie_rawRes="@raw/welcome_new" />
+
+
+
+<!--           </FrameLayout>-->
+
+           <com.facebook.shimmer.ShimmerFrameLayout
+               android:id="@+id/shimmerFrameLayout"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_above="@id/letsStartBtn"
+               android:layout_below="@id/openBorder_logo"
+               android:layout_gravity="center"
+               android:layout_marginHorizontal="@dimen/_10sdp"
+               android:orientation="vertical">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+
+                   <include layout="@layout/shimmer_question_layout" />
+
+               </LinearLayout>
+
+           </com.facebook.shimmer.ShimmerFrameLayout>
+
+           <androidx.core.widget.NestedScrollView
+               android:id="@+id/scroll"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:overScrollMode="never"
+               android:layout_above="@id/letsStartBtn"
+               android:layout_below="@+id/openBorder_logo">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginHorizontal="@dimen/_15sdp"
+                   android:layout_marginTop="@dimen/_10sdp"
+                   android:orientation="vertical">
+
+                   <com.open.borders.thirdPartyModules.htmltextview.HtmlTextView
+                       android:id="@+id/qDescription"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/_5sdp"
+                       android:layout_marginBottom="@dimen/_30sdp"
+                       android:fontFamily="@font/grotesk_pro_light"
+                       android:lineSpacingExtra="@dimen/_3sdp"
+                       android:textColor="@color/black"
+                       android:textColorLink="@color/link_color"
+                       android:textSize="16sp" />
+
+               </LinearLayout>
+
+           </androidx.core.widget.NestedScrollView>
+
+           <com.google.android.material.button.MaterialButton
+               android:id="@+id/letsStartBtn"
+               style="@style/button_style_full"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_50sdp"
+               android:layout_alignParentBottom="true"
+               android:layout_marginHorizontal="@dimen/_15sdp"
+               android:layout_marginTop="@dimen/_5sdp"
+               android:layout_marginBottom="@dimen/_10sdp"
+               android:text="@string/let_s_get_started" />
+
+           <FrameLayout
+               android:id="@+id/fragmentContainer"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:visibility="gone" />
+
+
+       </RelativeLayout>
+
+   </RelativeLayout>
+</layout>

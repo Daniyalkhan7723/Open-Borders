@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/grotesk_pro_bold"
+            android:gravity="center"
+            android:text="@string/schedule_a_consultation"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/brown_40" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/grotesk_pro_bold"
+                android:gravity="center"
+                android:text="Consultation_Fee"
+                android:textColor="@color/black_80"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:fontFamily="@font/grotesk_pro_bold"
+                android:gravity="start"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text="$ 300"
+                android:textColor="@color/black_80"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioPhoneCall"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/app_icon_bg_color_brown"
+                    android:text="@string/phone_call"
+                    android:textColor="@color/black_80"
+                    android:fontFamily="@font/grotesk_pro_normal"
+                    android:textColorHint="@color/black_80" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/radioVideoCall"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/app_icon_bg_color_brown"
+                    android:text="@string/video_call"
+                    android:fontFamily="@font/grotesk_pro_normal"
+                    android:textColor="@color/black_80" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/consultant1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="@drawable/bg_popup">
+
+            <TextView
+                android:id="@+id/with"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginVertical="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_weight="0.2"
+                android:gravity="center_vertical"
+                android:text="With"
+                android:fontFamily="@font/grotesk_pro_normal"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/consultantTv1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginVertical="@dimen/_7sdp"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:gravity="center_vertical"
+                android:text="Shahid Haque"
+                android:fontFamily="@font/grotesk_pro_normal"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <ImageView
+                android:id="@+id/selectImage1"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:visibility="gone"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_tick" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="or"
+            android:textColor="@color/black_80"
+            android:textSize="@dimen/_14sdp" />
+
+        <LinearLayout
+            android:id="@+id/consultant2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/bg_popup">
+
+            <TextView
+                android:id="@+id/with1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginVertical="@dimen/_7sdp"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_weight="0.2"
+                android:gravity="center_vertical"
+                android:text="With"
+                android:fontFamily="@font/grotesk_pro_normal"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/consultantTv2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginVertical="@dimen/_7sdp"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:gravity="center_vertical"
+                android:text="Erick Valencia"
+                android:fontFamily="@font/grotesk_pro_normal"
+                android:textColor="@color/black_80"
+                android:textSize="@dimen/_10ssp" />
+
+            <ImageView
+                android:id="@+id/selectImage2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/ic_tick" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/continueButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/button_bg"
+            android:gravity="center"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipeToRefresh"
+    tools:context=".views.fragments.flatFee.FlatFeeFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/grotesk_pro_normal"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:textSize="@dimen/_10ssp"
+                android:textColorHighlight="#00FFFFFF"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:id="@+id/webViewLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <WebView
+                    android:id="@+id/myweb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/app_bg_color"
+                    android:overScrollMode="never"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <com.skydoves.powerspinner.PowerSpinnerView
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/grotesk_pro_bold"
+            android:hint="All"
+            android:paddingEnd="@dimen/_8sdp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_margin="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_10ssp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            app:spinner_divider_show="true"
+            android:paddingVertical="@dimen/_10sdp"
+            app:spinner_divider_color="@color/black_36"
+            app:spinner_arrow_gravity="end"
+            app:spinner_arrow_show="true"
+            app:spinner_popup_animation="dropdown"
+            app:layout_constraintTop_toBottomOf="@+id/layout_top" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/shimmer_packages_recycler_layout" />
+
+                <include layout="@layout/shimmer_packages_recycler_layout" />
+
+                <include layout="@layout/shimmer_packages_recycler_layout" />
+
+                <include layout="@layout/shimmer_packages_recycler_layout" />
+
+                <include layout="@layout/shimmer_packages_recycler_layout" />
+
+                <include layout="@layout/shimmer_packages_recycler_layout" />
+
+                <include layout="@layout/shimmer_packages_recycler_layout" />
+
+                <include layout="@layout/shimmer_packages_recycler_layout" />
+
+            </LinearLayout>
+
+
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintTop_toBottomOf="@+id/spinner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPackages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/_10sdp"
+                android:layoutAnimation="@anim/animation_layout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/noDataView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/grotesk_pro_bold"
+                android:text="@string/no_services_found"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--            android:id="@+id/swipeToRefresh"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/spinner"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            -->
+<!--            >-->
+
+<!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent">-->
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/rvPackages"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginStart="@dimen/_6sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_6sdp"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:paddingBottom="@dimen/_10sdp"-->
+<!--                    android:layoutAnimation="@anim/animation_layout"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/noDataView"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:gravity="center"-->
+<!--                    android:visibility="gone"-->
+<!--                    android:textSize="@dimen/_12sdp"-->
+<!--                    android:fontFamily="@font/grotesk_pro_bold"-->
+<!--                    android:text="@string/no_services_found"-->
+<!--                    />-->
+
+<!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

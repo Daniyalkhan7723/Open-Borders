@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/answerLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_7sdp"
+    android:elevation="0dp"
+    app:cardCornerRadius="@dimen/_3sdp"
+    app:cardElevation="0dp"
+    app:strokeWidth="1.8dp"
+    app:strokeColor="@color/black"
+    app:cardUseCompatPadding="false">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/answerTv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_5sdp"
+        android:fontFamily="@font/grotesk_pro_light"
+        android:text="@string/no_i_am_not_a_green_card_holder"
+        android:textColor="@color/black_80"
+        android:textSize="18sp" />
+
+</com.google.android.material.card.MaterialCardView>

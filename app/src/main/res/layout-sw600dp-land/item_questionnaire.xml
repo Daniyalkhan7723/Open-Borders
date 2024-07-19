@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/app_bg_color"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:id="@+id/questionRecyclerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+<!--        <com.airbnb.lottie.LottieAnimationView-->
+<!--            android:id="@+id/openBorder_logo"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_200sdp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            app:lottie_autoPlay="true"-->
+<!--            app:lottie_loop="true"-->
+<!--            app:lottie_rawRes="@raw/logo_ob_end" />-->
+
+<!--        <com.airbnb.lottie.LottieAnimationView-->
+<!--            android:id="@+id/openBorder_logo2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_230sdp"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            android:visibility="gone"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            app:lottie_autoPlay="true"-->
+<!--            app:lottie_loop="true"-->
+<!--            app:lottie_rawRes="@raw/logo_part2" />-->
+        <!--        <com.google.android.material.imageview.ShapeableImageView-->
+        <!--            android:id="@+id/openBorder_logo"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="@dimen/_200sdp"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:scaleType="centerCrop"-->
+        <!--            android:backgroundTint="@color/app_bg_color"/>-->
+
+        <!--        <com.airbnb.lottie.LottieAnimationView-->
+        <!--            android:id="@+id/openBorder_logo"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="@dimen/_150sdp"-->
+        <!--            android:layout_marginTop="@dimen/_20sdp"-->
+        <!--            android:backgroundTint="@color/app_bg_color"-->
+        <!--            app:lottie_autoPlay="true"-->
+        <!--            app:lottie_fileName="open_border_logo.json"-->
+        <!--            app:lottie_loop="true"-->
+        <!--            app:lottie_speed="1" />-->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/qLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:textColor="@color/black_80"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+<!--        <WebView-->
+<!--            android:id="@+id/mWebView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/mQDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:lineSpacingExtra="@dimen/_5sdp"
+            android:textColor="@color/black_80"
+            android:textColorLink="@color/link_color"
+            android:textSize="14sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/actionLinkRecylcer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/action_link_layout" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/answer_recycler_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="3"
+            tools:listitem="@layout/answers_layout" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

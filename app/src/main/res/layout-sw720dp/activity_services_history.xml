@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.activities.account.servicesHistory.ServicesHistoryActivity">
+
+    <include
+        android:id="@+id/toolbarId"
+        layout="@layout/home_toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/questioner_btm_button_bg"
+        android:weightSum="2">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/consultations"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/actionlink_bg"
+            android:gravity="center"
+            android:layout_marginVertical="@dimen/_2ssp"
+            android:layout_marginStart="@dimen/_2ssp"
+            app:fontFamily="@font/grotesk_pro_light"
+            android:textSize="@dimen/_7ssp"
+            android:text="@string/consultations"
+            android:textColor="@color/white" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/services"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginVertical="@dimen/_2ssp"
+            android:layout_marginEnd="@dimen/_2ssp"
+            app:fontFamily="@font/grotesk_pro_light"
+            android:textSize="@dimen/_7ssp"
+            android:text="@string/flat_fee_services" />
+
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeToRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="@dimen/_30sdp">
+
+                    <include layout="@layout/services_history_shimmer_layout" />
+
+                    <include layout="@layout/services_history_shimmer_layout" />
+
+                    <include layout="@layout/services_history_shimmer_layout" />
+
+                    <include layout="@layout/services_history_shimmer_layout" />
+
+                    <include layout="@layout/services_history_shimmer_layout" />
+
+                    <include layout="@layout/services_history_shimmer_layout" />
+
+                    <include layout="@layout/services_history_shimmer_layout" />
+
+                    <include layout="@layout/services_history_shimmer_layout" />
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/servicesHistory_recycler_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layoutAnimation="@anim/animation_layout"
+                    android:orientation="vertical"
+                    android:overScrollMode="never"
+                    android:visibility="gone"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:itemCount="5"
+                    tools:listitem="@layout/services_history_layout" />
+
+
+                <TextView
+                    android:id="@+id/noDataView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textSize="@dimen/_12sdp"
+                    android:fontFamily="@font/grotesk_pro_bold"
+                    app:lottie_autoPlay="true"
+                    android:text="@string/no_services_found"
+                    />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

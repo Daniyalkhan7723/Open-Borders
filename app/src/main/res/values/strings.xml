@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Open Borders</string>
+
+    <string name="border_crossing_url">www.bordercrossinglaw.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="hello">Hello World!</string>
+    <string name="welcome_to_open_borders">Welcome To Open Borders</string>
+    <string name="the_free_immegration_guide">The free immigration guide. This guide was created by an immigration attorney and former law professor who has represented thousands of clients in the U.S. immigration system.</string>
+    <string name="select_language_to_continue">Select Language To Continue</string>
+    <string name="welcome_to_border_crossing_law">Please sign in or create an account.</string>
+    <string name="Please_create">Create an account.</string>
+    <string name="enter_your_details_to_proceed_further">You are welcome to use our guide without signing in, but you must create an account to hire us for services.</string>
+
+
+    <string name="srn_drawer_open">Open</string>
+    <string name="srn_drawer_close">Close</string>
+
+    <string name="srn_ex_no_menu_view">No view for menu provided. You must either call .withMenuView(View) or pass a valid resource id to .withMenuLayout(int)</string>
+    <string name="srn_ex_bad_content_view">Your content view must contain exactly one child. Make sure you call inject() after setContentView().</string>
+    <string name="spanish">Español</string>
+    <string name="email">Email</string>
+    <string name="catherine_shaw_gmail_com">catherine.shaw@gmail.com</string>
+    <string name="dots">.............................</string>
+    <string name="forget_password">Forgot Password?</string>
+    <string name="login">Sign In</string>
+    <string name="don_t_have_an_account">Don’t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="i_agree_with_terms_and_conditions"><u>Click to review the Terms and Conditions of use.</u></string>
+    <string name="i_agree_with_terms_and_conditions_consultation">I will be sent a link to sign an Attorney-Client Contract. I understand that I am not represented by the firm until I sign it.</string>
+    <string name="english">English</string>
+    <string name="enter_verification_code">Enter Verification Code</string>
+    <string name="password">Password</string>
+    <string name="click_to_verify_or_enter_the_code_below">Please enter the code that was provided in that message:</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="an_otp_has_been_sent_to">We have sent an e-mail to:</string>
+    <string name="verify_code">Verify Code</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="services_history">Orders</string>
+    <string name="orders">Orders</string>
+    <string name="account_detail">Profile</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="logout">Sign Out</string>
+    <string name="fiancee_visa">Fiancee Visa</string>
+    <string name="_1_000_00_every_month_for_2_months">$1,000.00 every month for 2 months</string>
+    <string name="view_detail"><u>View Detail>></u></string>
+    <string name="october_24_2019"><u>October 24, 2019</u></string>
+    <string name="recently_taken_appointments">Recently Taken Appointments</string>
+
+    <string name="start_consultation">Schedule Consultation</string>
+    <string name="guide">Guide</string>
+    <string name="schedule_consulting">Schedule a Consultation</string>
+    <string name="flat_fee_services">Flat Fee Services</string>
+    <string name="news">News</string>
+    <string name="account">Account</string>
+    <string name="select_a_package_to_consultation">Select A Package To Consultation</string>
+
+    <string name="your_information">Your Information</string>
+    <string name="first_name">First Name</string>
+    <string name="jake">Jake</string>
+    <string name="last_name">Last Name</string>
+    <string name="smith">Smith</string>
+    <string name="jake_gmail_com">jake@gmail.com</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address_detail">Address</string>
+    <string name="_317_mayer">317 Mayer</string>
+    <string name="inglewood">Inglewood</string>
+    <string name="street_address">Street Address</string>
+    <string name="credit_card_number">Credit Card Number</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="st_23">st# 23</string>
+    <string name="zip_and_postal_code">Zip and Postal Code</string>
+    <string name="ca_90301">CA 90301</string>
+    <string name="country">Country</string>
+    <string name="united_state">United State</string>
+    <string name="payment_detail">Payment Detail</string>
+    <string name="credit_card_detail">Credit Card Detail</string>
+    <string name="_1234_4322_23445">1234 4322 23445</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="_12_2023">12/2023</string>
+    <string name="cvc_code">CVC Code</string>
+    <string name="cvc">CVC</string>
+    <string name="zip_postal_code">Zip/Postal Code</string>
+    <string name="done">Done</string>
+    <string name="march_30_2020">March 30, 2020</string>
+    <string name="know_your_rights_when_dealing_with_law_enforcement">Know Your Rights When Dealing with Law Enforcement</string>
+    <string name="it_is_important_for_all_of_us_regardless_of_immigration_status_to_know_how_to_exercise_our_rights_if_we_are_stopped_by_local_police_or_immigration_authorities_we_all_know_that_in_many_parts_of_our_country_there_is_not_a_lot_of_racial_or_ethnic_diversity">It is important for all of us, regardless of immigration status, to know how to exercise our rights if we are stopped by local police or immigration authorities. We all know that in many parts of our country, there is not a lot of racial or ethnic diversity.</string>
+    <string name="all_previous_news">All Previous News</string>
+    <string name="article_finding_home_um_soccer_coach_s_journey_to_u_s_citizenship">Article: Finding home: UM soccer coach’s journey to U.S. citizenship</string>
+    <string name="your_evaluation">Your Evaluation</string>
+    <string name="view_your_evaluation">View Your Evaluation</string>
+    <string name="the_free_immigration_guide">The free immigration guide.</string>
+    <string name="guide_detail">This guide was created by an immigration attorney and former law professor who has represented thousands of clients in the U.S. immigration system. Our immigration laws are highly complex, and the opportunities that you have depend on many important factors. By asking a series of simple questions, this guide will give you a starting point for what you can do to get legal status in the United States.<br /> <br /> We wanted to use our knowledge of immigration law to benefit people around the world, and so we made this guide free to use. However, we strongly believe that legal representation is critical in immigration cases, and do not encourage you to file any immigration applications without the assistance of a qualified attorney.\n\nEven though we provide personalized information based on your answers, this is not legal advice, and we are not yet your attorneys. If at any point you want our help, you can schedule a consultation by phone or video, or hire us for full representation.\n\nYour answers are completely private. We do not save your information on our servers, or see your answers, unless you decide to send them to us. We will never share your information with anyone else without your permission. Please review our Legal Disclaimers and Terms of Use. If you agree with those terms, please click below to get started.</string>
+    <string name="news_detail">It is important for all of us, regardless of immigration status, to know how to exercise our rights if we are stopped by local police or immigration authorities.  We all know that in many parts of our country, there is not a lot of racial or ethnic diversity.\n\nThis guide was created by an immigration attorney and former law professor who has represented thousands of clients in the U.S. immigration system. Our immigration laws are highly complex, and the opportunities that you have depend on many important factors. By asking a series of simple questions, this guide will give you a starting point for what you can do to get legal status in the United States.<br /> <br /> We wanted to use our knowledge of immigration law to benefit people around the world, and so we made this guide free to use. However, we strongly believe that legal representation is critical in immigration cases, and do not encourage you to file any immigration applications without the assistance of a qualified attorney.\n\nEven though we provide personalized information based on your answers, this is not legal advice, and we are not yet your attorneys. If at any point you want our help, you can schedule a consultation by phone or video, or hire us for full representation.\n\nYour answers are completely private. We do not save your information on our servers, or see your answers, unless you decide to send them to us. We will never share your information with anyone else without your permission. Please review our Legal Disclaimers and Terms of Use. If you agree with those terms, please click below to get started.</string>
+    <string name="let_s_get_started">Let\'s Get Started</string>
+    <string name="_1">1</string>
+    <string name="are_you_a_lawful_permanent_resident_of_the_united_states">Are you a lawful permanent resident of the United States?</string>
+    <string name="this_means_that_you_have_a_green_card_already">This means that you have a “green card” already.</string>
+    <string name="no_i_am_not_a_green_card_holder">No, I am not a green card holder.</string>
+    <string name="schedule_a_consultation_now">Schedule a Consultation Now.</string>
+    <string name="restart">Restart</string>
+    <string name="do_you_want_to_clear_all_your_answers_and_restart_the_guide_from_the_beginning">Are you sure you want to erase your answers and restart the guide?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+    <string name="previous">Go to previous</string>
+    <string name="next">Go to next</string>
+    <string name="calendar">Calendar</string>
+    <string name="select_date">Select Date</string>
+    <string name="date">Date</string>
+    <string name="save">Save</string>
+    <string name="select_time">Select Time</string>
+    <string name="schedule_a_consultation">Schedule A Consultation</string>
+    <string name="phone_call">Phone Call</string>
+    <string name="video_call">Video Call</string>
+    <string name="select_a_consultation_method">Select a consultation method</string>
+    <string name="toast_success">Success</string>
+    <string name="toast_error">Error</string>
+    <string name="about_us">About Us</string>
+    <string name="update_payment">Update Your Payment</string>
+    <string name="change_language">Language Preferences</string>
+    <string name="are_you_sure_to_logout">Are you sure you want to sign out?</string>
+    <string name="immigration_history">Your Immigration History </string>
+    <string name="factors_options">Factors Relating to Your Options</string>
+    <string name="inadmissibility">Grounds of Inadmissibility</string>
+    <string name="quantity">Quantity:</string>
+    <string name="amount">Amount:</string>
+    <string name="you_can_use_this_page_to_make_a_one_time_payment_if_we_have_asked_you_to_add_to_your_retainer_balance_you_can_select_the_increments_needed_and_ad_them_to_your_cart_to_reach_the_requested_amount_then_checkout_using_the_cart_these_funds_will_be_immediately_added_to_your_account_with_the_firm">You can use this page to make a one-time payment if we have asked you to add to your retainer balance. You can select the increments needed, and ad them to your cart, to reach the requested amount. Then checkout using the cart. These funds will be immediately added to your account with the firm.</string>
+    <string name="from_10_00">From $10.00</string>
+    <string name="retainer_payment_one_time_payment">Retainer Payment (One Time Payment)</string>
+    <!--    <string name="consultation_text">Select date &amp; time for consulting \n <b>$300</b> will be charged for consultation</string>-->
+    <!--    <string name="consultation_text">For over 15 years, we have been helping clients understand their options and guide them to the best solutions. You can schedule a consultation by phone or video with one of our qualified immigration attorneys, who will review your case and advise you on your options. You can e-mail us documents to review, and we will answer all of your questions. We charge a flat fee of <b>$300</b> for a consultation.</string>-->
+    <string name="consultation_text">🗓️ Schedule a Consultation
+You can schedule a consultation by phone or video with one of our experienced immigration attorneys, who will review your case and answer all your questions.
+For over 20 years, we have been helping clients understand their options and guide them to the best solutions.
+📥 You can e-mail us documents to review during the consultation.
+💳 We charge a flat fee of $300 for a consultation.</string>
+
+    <string name="time">Time</string>
+    <string name="buy_this_service_package">Buy this Subscription</string>
+    <string name="buy_this_service">Buy this Service</string>
+    <string name="_15_000_month">$15,000 / Month</string>
+    <string name="month">Month</string>
+    <string name="package_detail">Services</string>
+    <string name="from">From:</string>
+    <string name="total_price">Total Price</string>
+    <string name="news_Detail">News Detail</string>
+    <string name="please_enter_email">Please enter email</string>
+    <string name="please_enter_firstName">Please enter first name</string>
+    <string name="please_enter_lastName">Please enter last name</string>
+    <string name="please_enter_phoneNo">Please enter your phone number</string>
+    <string name="please_enter_phoneNo_characters">The phone no must be at least 10 characters</string>
+    <string name="please_enter_street">Please enter your street address</string>
+    <string name="please_enter_cityName">Please enter your city name</string>
+    <string name="please_enter_state">Please enter your state name</string>
+    <string name="details_required">Please enter some details about the immigration help you need.</string>
+    <string name="please_enter_country">Please enter your country name</string>
+    <string name="please_enter_zip">Please enter your country postal code</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="please_enter_minimum_8_characters_long_password">Please enter minimum 8 characters long password</string>
+    <string name="password_and_confirm_password_does_not_match">Password and confirm password does not match</string>
+    <string name="please_enter_valid_email_address">Please enter valid email address</string>
+    <string name="please_enter_valid_card">Please enter valid card number.</string>
+    <string name="please_enter_valid_exp">Please enter valid expiry date.</string>
+    <string name="otp_code_sent_successfully">OTP code sent successfully</string>
+    <string name="please_check_terms_and_conditions">Please Check Terms And Conditions</string>
+    <string name="please_select_consultation_type">Please select consultation type</string>
+    <string name="please_select_consultant">Please select consultant</string>
+    <string name="payment_request_failed">Payment Request Failed</string>
+    <string name="Unfortunately_google_pay_is_not_available_on_this_device">Unfortunately, Google Pay is not available on this device</string>
+    <string name="save_and_continue_later">Save</string>
+    <string name="consultation">Consultation</string>
+    <string name="consultations">Consultations</string>
+    <string name="services">Services</string>
+    <string name="continue_as_guest">Continue as Guest</string>
+    <string name="consultants">Consultants:</string>
+    <string name="consultation_type">Types:</string>
+    <string name="consultation_with">Attorneys:</string>
+    <string name="what_kind_of_immigration_help_do_you_need_please_provide_as_many_details_as_possible">What kind of immigration help do you need? Please provide as many details as possible</string>
+    <string name="more_times">More</string>
+    <string name="previous_">Previous</string>
+    <string name="this_guide_is_intended_to_serve_as_a_starting_point_for_determining_your_immigration_options_n_nlegal_representation_is_critical_in_immigration_cases_and_we_do_not_encourage_you_to_file_any_immigration_application_without_the_assistance_of_a_qualified_attorney">This guide is intended to serve as a starting point for determining your immigration options.\n\nLegal representation is critical in immigration cases and we do not encourage you to file any immigration application without the assistance of a qualified attorney.</string>
+    <string name="e_mail_these_results">E-mail these results.</string>
+    <string name="no_services_found">No Services Found</string>
+
+    <string name="terms_condition_long"> <b>Legal Disclaimers and Terms of Use Agreement for the Border Crossing Law Firm (bordercrossinglaw.com) and Open Borders (openborders.io) Websites</b>\n\nThis Terms of Use Agreement is between you and the Border Crossing Law Firm, and governs your use of the websites located at bordercrossinglaw.com and openborders.io (including all subdomains of these websites). By accessing or using these websites, you agree to be legally bound by this agreement. Your use of the websites are also subject to the terms of the Privacy Policy, below. If you retain us to represent you for specific legal services, this representation will also be governed by a separate Attorney-Client Agreement, which is sent after you retain us for legal services. If you do not agree to the terms of this agreement and the Privacy Policy, you may not access or use the websites. The websites are intended for use by persons 18 years of age or older. If you are under 18 years of age, you may not access or use the websites.\n\n<b>Not Legal Advice</b>\n\nOpen Borders is a free immigration guide that is intended to serve as a starting point for determining your immigration options.  The information on the Open Borders and Border Crossing Law Firm websites are not legal advice, and do not form an Attorney-Client relationship.  These websites are not a substitute for the advice or representation of an attorney.  Immigration laws are complex and frequently change.  We tried to take into account hundreds of possible immigration scenarios, but we make no representation that the information in this guide is perfect.  There could be a number of variables in your case that are not fully taken into account in the information provided by this guide.  There could also be immigration relief that you qualify for that this guide does not discover.\n\nAll of the information provided on these websites is meant to be reviewed and confirmed by an immigration attorney prior to taking any action with the U.S. government to file any applications for relief.  The Border Crossing Law Firm expressly disclaims all liability in respect to actions taken or not taken based on the content of the Open Borders and Border Crossing Law Firm websites.  The reader should also be aware that prior results described on these websites do not guarantee a similar outcome.\n\nWe strongly believe that legal representation is critical in immigration cases, and do not encourage you to file any immigration applications without the assistance of an immigration attorney.  If you decide to retain the Border Crossing Law Firm to represent you, then the terms of that agreement are specified in a separate Attorney-Client Contract that will be sent to you.  Unless you retain the Border Crossing Law Firm, we are not your attorneys, and you may not consider the information on our websites to be legal advice.\n\nNeither receipt of information presented on this site nor any e-mail or other electronic communication sent to Border Crossing Law Firm or its lawyers through this site will create an attorney-client relationship.  Accordingly, the attorney-client relationship will not begin until you receive a written statement from us that we represent you (an “Attorney-Client Contract”).Border Crossing Law Firm attorneys named on the website are authorized to practice law in Illinois and Montana, and before any federal administrative tribunal, such as the Executive Office for Immigration review, but may not be authorized to practice law in other state or federal jurisdictions.  Attorneys listed on this website are not Certified by the Texas Board of Legal Specialization.\n\n<b>Attorney Advertising</b>\n\nThe content of the Open Borders and Border Crossing Law Firm websites should be considered attorney advertising, because it is intended to encourage you to hire us to provide legal services to you.\n\n<b>No Government Affiliation</b>\n\nThe Border Crossing Law Firm and Open Borders are not affiliated with the United States Citizenship and Immigration Services ("USCIS"), United States Immigration and Customs Enforcement ("ICE"), United States Customs and Border Protection ("CBP"), the Executive Office of Immigration Review ("EOIR"), the Board of Immigration Appeals ("BIA"), or any other government entity.\n\n<b>Revisions to the Websites</b>\n\nThe information on the Open Borders and Border Crossing Law Firm websites, including the Legal Disclaimers, Terms of Use Agreement, and Privacy Policy, are subject to change at any time and for any reason without notice.  We recommend  reviewing the terms and conditions set forth on this page each and every time you access the websites.\n\n<b>Use of Services</b>\n\nSubject to your complete compliance with the provisions of this agreement, you are granted a limited, non-exclusive, non-transferable, revocable license to use the Open Borders and Border Crossing Law Firm websites solely in the manner authorized and intended by the Border Crossing Law Firm. Any rights not expressly granted in this agreement are expressly reserved by the Border Crossing Law Firm. The resale or distribution of materials made available on the Open Borders and Border Crossing Law Firm websites without the express, written consent of the Border Crossing Law Firm is prohibited. All such materials are authorized only for your own personal use.\n\nIn connection with your access to or use of the Open Borders and Border Crossing Law Firm websites, you are prohibited from:\n\nAccessing data not intended for you, or logging onto a server or an account which you are not authorized to access;\n\nUsing any engine, software, tool, agent or other device or mechanism (including without limitation browsers, spiders, robots, avatars or intelligent agents) to access, navigate, or search the websites, other than generally available third-party web browsers (e.g., Mozilla Firefox, Google Chrome and Microsoft Explorer);\n\nUsing any device, software or routine to interfere or attempt to interfere with the proper working of the websites or any activity being conducted on the websites;\n\nAttempting to probe, scan or test the vulnerability of the Open Borders and Border Crossing Law Firm systems or networks or to breach security or authentication measures without proper authorization;\n\nAttempting to interfere with service to any user, host or network, including, without limitation, via means of submitting a virus to the websites, overloading, “flooding,” “spamming,” “mailbombing” or “crashing”;\n\nSending unsolicited email, including promotions and/or advertising of products or services;\n\nForging any TCP/IP packet header or any part of the header information in any email or newsgroup posting;\n\nCopying, modifying, adapting, reproducing, reverse engineering, decompiling, disassembling, or preparing derivative works from Open Borders and Border Crossing Law Firm software or content that is not your own;\n\nDistributing viruses, malicious code, malware or any other technologies that may harm the Border Crossing Law Firm, the websites, or a user;\n\nViolating or circumventing any applicable laws, regulations or technical measures, security measures or policies;\n\nViolating, infringing, or breaching the rights of the Border Crossing Law Firm or a third-party, including, but not limited to any copyrights, trademark rights, patent rights, trade secrets rights, rights of publicity or personality, moral rights, or any other proprietary rights;\n\nSubmitting to the website any false, inaccurate, misleading, deceptive, defamatory, or libelous materials or user content; or\n\nKnowingly withholding or failing to disclose information requested by the Open Borders and Border Crossing Law Firm websites, or required to be included or disclosed on a USCIS form or other government form, or engaging in any action that constitutes fraud.\n\nSubmitting false, inaccurate, misleading or deceptive information, or failing to disclose information requested by the Open Borders and Border Crossing Law Firm websites or required to be included or disclosed on a USCIS form or other government form may result in your application being denied by the applicable government agency and the Border Crossing Law Firm will not have any liability to you as a result of such actions.\n\nViolations of system or network security may result in civil or criminal liability. The Border Crossing Law Firm will investigate occurrences that may involve such violations and may involve, and cooperate with, law enforcement authorities in prosecuting users who are involved in such violations.\n\n<b>Ownership and Intellectual Property Rights</b>\n\nAll materials, including text, images, videos, illustrations, designs, icons, photographs, software, programs and written and other materials that are part of the Open Borders and Border Crossing Law Firm websites is the property of the Border Crossing Law Firm. This content is intended solely for personal, non-commercial use. No right, title or interest in any of this content is transferred to you by way of this agreement or otherwise. You may not reproduce, publish, transmit, distribute, display, modify, create derivative works from, sell or participate in any sale of or exploit in any way, in whole or in part, any of the content of the the Open Borders and Border Crossing Law Firm websites or any related software.\n\nThe Open Borders and Border Crossing Law Firm logos are trademarks of the Border Crossing Law Firm.\n\n<b>Disclaimer of Warranty</b>\n\nThe Open Borders and Border Crossing Law Firm websites are provided “as is” and “as available.”  While we strive to provide accurate information, we can’t guarantee that our information will always be up to date or error-free.  The Border Crossing Law Firm makes no representations or warranties of any kind, express or implied.  To the fullest extent permissible by applicable law, the Border Crossing Law Firm disclaims all warranties, express or implied, including but not limited to the implied warranties or merchantability, non-infringmenet, and fitness of a particular purpose.  You use the Open Borders and Border Crossing Law Firm websites at your sole risk.  This disclaimer constitutes an essential part of this agreement and you acknowledge that without your agreement to the terms of this disclaimer, the Border Crossing Law Firm would not have entered into this agreement with you.\n\n<b>Limitation of Liability</b>\n\nUnder no circumstances, and under no legal or equitable theory, whether in tort, contract, strict liability, or otherwise shall the Border Crossing Law Firm, its affiliates, and their respective employees, directors, officers, and agents be liable to you or to any other person for any indirect, special, incidental, or consequential losses or damages of any nature arising out of or in connection with the use of or inability to use the Open Borders and Border Crossing Law Firm websites, including without limitation, damages for lost profits, loss of goodwill, loss of data, accuracy of results, or computer failure or malfunction, even if the Border Crossing Law Firm has been advised of or should have known of the possibility of such losses or damages.  In no event will the Border Crossing Law Firm ever be liable to you for any damages in excess of the fees paid by you in connection with your use of the websites during the six month period before the claim arose. \n\n<b>Indemnification</b>\n\nYou agree to defend, indemnify and hold harmless the Border Crossing Law Firm, its affiliates, and their respective directors, officers and employees from and against any and all claims, damages, costs and expenses, including attorneys’ fees, arising from or related to your breach of this agreement, your improper use of the Open Borders and Border Crossing Law Firm websites, or your breach of any applicable law or infringement of the rights of a third party. The Border Crossing Law Firm shall have the right to participate in the defense of any such claim, at its own cost. You may not settle or negotiate any claim that results in liability to, or imposes any obligation upon the Border Crossing Law Firm, financial or otherwise, without the written consent of the Border Crossing Law Firm.\n\n<b>Consent to Electronic Communications</b>\n\nYou consent to receive communications from the Border Crossing Law Firm electronically, and you agree that all agreements, notices, disclosures and other communications that the Border Crossing Law Firm provides to you electronically, via email, or on the websites, satisfy any legal requirement that such communications or agreements be in writing.\n\n<b>Severability</b>\n\nIf any provision of this agreement is held to be invalid or unenforceable for any reason, the remaining provisions will continue in full force without being impaired or invalidated in any way.\n\n<b>Governing Law</b>\n\nThis agreement will be construed in accordance with and governed exclusively by the laws of the State of Montana that are applicable to agreements made among Montana residents and to be performed wholly within such jurisdiction, regardless of the parties’ actual domiciles.\n\n<b>Privacy Policy</b>\n\nWhen you use the Open Borders and Border Crossing Law Firm websites, we collect certain information from you which can be used to contact or identify you, including, but not limited to, your name, gender, date of birth, telephone number, postal address, and email address (“Identity Information”). If you place an order for Services and/or pay a fee, we will collect additional payment and billing information from you, including, but not limited to, your credit/debit card information or bank account information (“Billing Information”). If you place an order for Services, you may also be required to provide information or documents necessary for preparation or filing of forms or applications to be submitted to government agencies, and if you file an application, we may receive from the government a unique receipt number assigned to your application (“Application Information”). Together, your Identity Information, Billing Information, Application Information, and Usage Data (defined below) are referred to as “Personal Information.”\n\nWe also automatically collect certain information regarding your access to and use of the Open Borders and Border Crossing Law Firm websites. This information includes your computer or device hardware and software, IP address, browser type, referring website URLs, domain names, access times, log files, pages on the Sites that you visit, and links you click on (“Usage Data”).\n\nLike many websites, we utilize devices to recognize you when you visit the Sites, track your interactions with the Sites, and personalize your experience. These include devices such as cookies, web beacons, pixels and similar devices. Cookies are small data files we transfer to your computer hard drive. We utilize some cookies that remain on your computer after you leave the Site so that we can recognize you when you return and provide a more personalized and helpful experience. We also utilize session cookies to enable certain features of the Sites, to better understand how you interact with the Sites and to monitor use of the Sites by  users and web traffic routing on the Sites. Session cookies are deleted from your computer when you log off from the Sites and close your browser. You maintain control over some of the information we collect through the use of cookies, and you can set your preferences regarding the use of cookies through your browser settings. If you choose not to accept cookies, you may not be able to access portions of the Sites or all functionality of the Services.\n\nIf you reside in the European Economic Area or Switzerland (collectively the “EU”), we rely on the following lawful grounds under the General Data Protection Regulation (“GDPR”) to process (collect, store, and use) your personal data contained in Personal Information and Usage Data: (a) it is necessary for the performance of a contract with you; (b) our legitimate interests; and (c) your consent. If you are a customer, the lawful ground for processing your personal data is necessary in performing our contract to provide the Services to you; our legitimate interest in understanding, improving, and promoting our services; and your consent. If you visit or use our websites, the lawful ground for processing your personal data is our legitimate interest in understanding how users interact with our websites to improve our websites and Services, and your consent.\n\nWe use information you submit to us at the time of account registration, such as your name and email address, and any updated information you subsequently submit, such as a new email address, to create and maintain your account.\n\nWe use your information, including Personal Information, primarily to operate our business and provide the Services to you, including the completion of immigration forms. We use such information to personalize the Services we provide to you. We may use your information to verify your identity, for fraud prevention, to enforce the applicable terms of use and to protect the integrity of the Site. We may also use your information to develop new features or Services and to improve the quality of our Services.\n\nWe may use your information, including Personal Information, to respond to questions you have regarding use of our Services or to provide technical assistance.\n\nWe may contact you using the contact information you provide in order to respond to inquiries you send to us, to communicate with you regarding our Services and the services of our partners, and to market our Services, or those of our partners, to you. If you are in the EU, we will only use your contact information to communicate with you regarding our partners’ services with your prior consent. We may send you emails advertising or promoting our Services or those of our partners. If you do not wish to receive such emails, you can choose to opt-out of receipt using the unsubscribe link within each email, or by sending an unsubscribe request.\n\nWe also may use information about you, including Personal Information, to improve the effectiveness of our marketing and advertising efforts.\n\nWe may use information about you, including Personal Information, and other users, in aggregate form, for our own internal research and analytical purposes. For example, we may use certain types of your information to understand which features of our Services are being used most frequently.\n\nWe have put in place physical, electronic and managerial procedures to protect the security of the information we collect, both during transmission and once received. This includes, but is not limited to, encryption, access control and audit logging on Personal Information. However, no method of transmission over the internet or method of storage is 100% secure. We cannot guarantee that our security measures will prevent our computer systems from being accessed illegally, nor can we guarantee that the information on our computer systems will not be viewed or stolen. Therefore, the Border Crossing Law Firm disclaims all liability for the theft, interception, loss, or unauthorized access of your information.  \n\nWe use Google Analytics to collect information about use of the Sites. Google Analytics collects information such as how often users visit the Site, what pages they visit when they do so, and what other websites they used prior to coming to the Site. We use the information we get from Google Analytics to improve the Sites and Services. Google Analytics collects only the IP address assigned to you on the date you visit this site, rather than your name or other Personal Information. We do not combine the information collected through the use of Google Analytics with personally identifiable information. Although Google Analytics plants a permanent cookie on your web browser to identify you as a unique user the next time you visit this site, the cookie cannot be used by anyone but Google. Google’s ability to use and share information collected by Google Analytics about your visits to this site is restricted by the Google Analytics Terms of Use and the Google Privacy Policy. You can prevent Google Analytics from recognizing you on return visits to the Sites by disabling cookies on your browser.\n\nAt a minimum, we will retain your Personal Information for as long as it may be needed to provide you Service and as needed to comply with our legal obligations. Unless you request deletion of your Personal Information sooner, we may hold any of your Personal Information indefinitely. Upon request, the Border Crossing Law Firm will inform you about whether we hold any of your Personal Information. You may terminate your account and request deletion of your Personal Information by contacting us at help@bordercrossinglaw.com. In some situations, we may be legally required to retain your Personal Information or for other reasons will not be able to comply with a request to delete data.\n\nFrom time to time, we may use customer information for new, unanticipated uses not previously disclosed in our privacy notice. \n\nIf you have any questions regarding this Privacy Notice, please contact us at help@bordercrossinglaw.com. </string>
+    <string name="go_back">Back</string>
+    <string name="your_immigration_history">Your Immigration History</string>
+    <string name="factors_relating_to_your_options">Factors Relating to Your Options</string>
+    <string name="grounds_of_inadmissibility">Grounds of Inadmissibility</string>
+    <string name="please_enter_your_information_it_will_be_kept_completely_private">Please create an account to securely save your data, and to hire us for services. We never share your information with anyone else without your permission.</string>
+    <string name="to_begin_our_representationwe_just_need_to_collect">To begin our representation, we just need to collect a bit of information.</string>
+
+    <string name="i_agree">I have read, understood, and agree with your terms of service.</string>
+    <string name="click_here">Click here to review.</string>
+    <string name="you_are_not_signed_in">You are not signed in.</string>
+    <string name="continue_without_signing_in">Continue without signing in.</string>
+    <string name="sign_in_or_create_an_account">Sign in or create an account.</string>
+    <string name="please_sign_in_or_create_an_account_to_hire_us_for_services">Please sign in or create an account to hire us for services.</string>
+    <string name="we_do_not_have_email">We don\'t have your e-mail.\nTo e-mail these results, please create an account.</string>
+    <string name="help">Help</string>
+    <string name="help_bordercrossing_law">Help@bordercrossinglaw.com</string>
+    <string name="we_cannot_answer_legal_questions_by_phone_or_e_mail_if_you_have_legal_questions_please_arrange_a_consultation_with_one_of_our_attorneys">ℹ️ We cannot answer legal questions by phone or e-mail. If you have legal questions, please arrange a consultation with one of our attorneys.</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="write_details_here">Write details here.</string>
+    <string name="send">Send</string>
+    <string name="if_you_are_seeing_something_unexpected_please_let_us_know_what_error_are_you_seeing">If you are seeing something unexpected, please let us know. What error are you seeing?</string>
+    <string name="help_phone_no" translatable="false">+1 (888) 595-2004</string>
+    <string name="pay">Pay</string>
+    <string name="from_">from</string>
+    <string name="every_month_for">every month for</string>
+    <string name="every_month">every month</string>
+    <string name="in_a_few_minute_you">📨 In a few minutes, you will receive an email from us with instructions for the next steps.</string>
+    <string name="we_look_forward">☀️ We look forward to representing you in this process.</string>
+    <string name="click_here_to_e_mail_us">💬 Click here to e-mail us information or documents to get us started.</string>
+    <string name="thank_you_for_retaining_us">Thank you for retaining us!</string>
+    <string name="if_your_application_involves_a_u_s_citizen_who_is_petitioning_for_you_please_give_us_their_full_legal_name_and_e_mail">If your application involves a U.S. citizen who is petitioning for you, please give us their full legal name and e-mail.</string>
+    <string name="email_for_u_s_citizen_petitioner_if_any">Email for U.S. Citizen Petitioner (If Any)</string>
+    <string name="information_for_u_s_citizen_petitioner_if_any">Information for U.S. Citizen Petitioner (If Any)</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="are_you_sure_you_want_to_sign_out">Would you like to delete your entire account record, along with associated personal data?</string>
+    <string name="delete_my_account">Delete my account</string>
+    <string name="do_not_delete">Do not delete</string>
+
+    <string name="buy_with_googlepay_button_content_description">Buy with Google Pay</string>
+
+    <string name="googlepay_button_content_description">Google Pay</string>
+    <string name="text_content_description">Text for the Google Pay button</string>
+    <string name="if_your_application_involves_someone_else_like_a_spouse_it_helps_us_get_started_faster_if_you_send_that_information_now"> If your application involves someone else, like a spouse, please enter their information below. We will use this information to send an invitation to our online intake form.</string>
+    <string name="would_you_like_to_create_an_account_to_save_your_data_and_review_orders">Create an account, to save your data and review your order history.</string>
+    <string name="confirm_u0026_pay"><![CDATA[Confirm & Pay]]></string>
+
+    <string name="e_mail_not_email_for_u_s_citizen_petitioner_if_any">E-mail "<b>"Not Email for U.S. Citizen Petitioner"</b>"</string>
+
+    <string name="family_member_if_any">👨‍👩‍👧‍👦 Family Member (if Any)</string>
+    <string name="we_offer_all_our_services_through_affordable_flat_fees_with_monthly_payment_options_to_help_you_finance_the_process_if_you_need_a_reduced_monthly_rate_please_contact_us_we_will_try_to_work_with_you_to_choose_a_payment_plan_that_you_can_afford">We offer all our services "<b>" through affordable flat fees, with monthly payment options "</b>" to help you finance the process. If you need a reduced monthly rate, "<b>" please contact us."</b>" We will try to work with you to choose a payment plan that you can afford.</string>
+    <string name="card_holder">Card Holder</string>
+    <string name="add_card">Add Card</string>
+    <string name="do_you_want_to_update_your_credit_card">Do you want to update your credit card?</string>
+    <string name="check_email">Check Email</string>
+    <string name="update">Update</string>
+
+</resources>

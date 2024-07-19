@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "574851177840",
+    "project_id": "open-borders---ga4-2b3cc",
+    "storage_bucket": "open-borders---ga4-2b3cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574851177840:android:aa5c08662160a56c72c3b5",
+        "android_client_info": {
+          "package_name": "com.open.borders"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574851177840-mueikk7i5ado5j3hi46h2rqn1prqdhf9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.open.borders",
+            "certificate_hash": "8b5eeb8c85cdb14fcd88a1dadbcda41270bd42a8"
+          }
+        },
+        {
+          "client_id": "574851177840-1beu8u0otgmfvigivimp8evqmcsf8408.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1dQ4usCSpfhCWKImRgXm3gmluKig1LzA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574851177840-1beu8u0otgmfvigivimp8evqmcsf8408.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "574851177840-b6jb3jnacvglnvttcrq55jnv1ptbk6tl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cp.OpenBordersAA"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

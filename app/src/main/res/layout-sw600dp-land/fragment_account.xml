@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.fragments.accounts.accountsHome.AccountFragment">
+
+    <LinearLayout
+        android:id="@+id/servicesHistoryId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/bg_popup_schdule_consultation_part_second_textview"
+        android:backgroundTint="@color/app_icon_bg_color_brown_light"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_10sdp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_services_history" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:text="@string/services_history"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/accountDetailId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/bg_popup_schdule_consultation_part_second_textview"
+        android:backgroundTint="@color/app_icon_bg_color_brown_light"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:paddingVertical="@dimen/_10sdp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_account_new" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:text="@string/account_detail"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llChangeLanguage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/bg_popup_schdule_consultation_part_second_textview"
+        android:backgroundTint="@color/app_icon_bg_color_brown_light"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:paddingVertical="@dimen/_10sdp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_language"
+            android:tint="#827565" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:text="@string/change_language"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llDeleteAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/bg_popup_schdule_consultation_part_second_textview"
+        android:backgroundTint="@color/app_icon_bg_color_brown_light"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:paddingVertical="@dimen/_10sdp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_icons8_trash_1" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:text="@string/delete_account"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/bg_popup_schdule_consultation_part_second_textview"
+        android:backgroundTint="@color/app_icon_bg_color_brown_light"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:paddingVertical="@dimen/_10sdp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/ic_logout" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:text="@string/logout"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/bg_popup_schdule_consultation_part_second_textview"
+        android:backgroundTint="@color/app_icon_bg_color_brown_light"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:visibility="gone">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@drawable/ic_logout" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:text="@string/sign_up"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PopupMenu">
+        <item name="android:itemBackground">@color/white</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:navigationBarDividerColor">@color/black_40</item>
+    </style>
+</resources>

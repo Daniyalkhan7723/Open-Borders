@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/evaluation_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_20sdp"
+        android:background="@drawable/popup_background_evaluation"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_15sdp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:paddingTop="@dimen/_5sdp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:src="@drawable/ic_evaluation_new" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/grotesk_pro_normal"
+                android:text="@string/view_your_evaluation"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+        <!--        android:id="@+id/upCommingAppointment_swifeRefreshLayout"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent"-->
+        <!--        android:layout_marginTop="@dimen/_10sdp">-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/evaluation_recycler_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/guideCardView"
+            android:layout_below="@+id/titleLayout"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="vertical"
+            tools:itemCount="5"
+            tools:listitem="@layout/evaluation_popup_recycler_layout" />
+
+        <!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/guideCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvEmailResult"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@color/app_bg_color"
+            app:cardCornerRadius="5dp"
+            app:strokeColor="@color/black_36"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/tvGuide"
+                android:fontFamily="@font/grotesk_pro_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/app_bg_color"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="@string/this_guide_is_intended_to_serve_as_a_starting_point_for_determining_your_immigration_options_n_nlegal_representation_is_critical_in_immigration_cases_and_we_do_not_encourage_you_to_file_any_immigration_application_without_the_assistance_of_a_qualified_attorney"
+                android:textSize="@dimen/_9sdp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tvEmailResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@color/app_icon_bg_color"
+            android:drawableStart="@drawable/ic_email_results"
+            android:drawablePadding="@dimen/_2sdp"
+            android:fontFamily="@font/grotesk_pro_light"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:padding="@dimen/_5sdp"
+            android:paddingStart="@dimen/_9sdp"
+            android:text="@string/e_mail_these_results"
+            android:textSize="@dimen/_9sdp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

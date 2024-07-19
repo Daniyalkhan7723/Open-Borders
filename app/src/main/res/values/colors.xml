@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+<!--    <color name="app_bg_color">#FFFAED</color>-->
+<!--    <color name="app_bg_color">#F9F4E7</color>-->
+<!--    <color name="app_bg_color">#F5F1E4</color>-->
+<!--    <color name="app_bg_color">#F9F4E7</color>-->
+    <color name="app_bg_color">#fffbf0</color>
+    <color name="app_color_light_new">#fffbf0</color>
+    <color name="bottom_menu_color">#F0E9D9</color>
+<!--    <color name="link_color">#0d6efd</color>-->
+<!--    <color name="link_color">#978878 </color>-->
+    <color name="link_color">#FF000000 </color>
+<!--    <color name="app_icon_bg_color">#EBE4D5</color>-->
+    <color name="app_icon_bg_color">#E9E2CE</color>
+    <color name="service_news_tab_color">#fffbf0</color>
+<!--    <color name="app_icon_bg_color">#D7CDB8</color>-->
+<!--    <color name="app_icon_not_selected_color">#CFC4AB</color>-->
+    <color name="app_icon_not_selected_color">#655a4e</color>
+    <color name="app_icon_bg_color_brown">#A08C73</color>
+    <color name="success_color">#978878</color>
+    <color name="app_icon_bg_color_brown_light">#B0A79C</color>
+    <color name="select_time">#C7AE9C84</color>
+    <color name="red_color">#FF3E49</color>
+    <color name="editText_line_color">#BEBEBE</color>
+    <color name="label_color">#544D4030</color>
+    <color name="app_icon_selected_color">#655a4e</color>
+    <color name="brown_new">#655a4e</color>
+    <color name="brown_new_min">#655a4e</color>
+    <color name="view_detail_color">#8B7252</color>
+    <color name="view_color">#655a4e</color>
+    <color name="black_36">#5C000000</color>
+    <color name="black_80">#CC000000</color>
+    <color name="black_70">#B3000000</color>
+    <color name="black_66">#A8000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="grey_30">#4D707070</color>
+    <color name="grey_10">#1A707070</color>
+    <color name="dark_brown">#6F5C44</color>
+    <color name="light_brown_25">#40A08C73</color>
+    <color name="brown_40">#66B0A79C</color>
+    <color name="guest_btn_color">#A5A090</color>
+
+</resources>

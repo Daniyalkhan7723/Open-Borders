@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:elevation="0dp"
+    android:background="@color/app_bg_color"
+    android:backgroundTint="@color/app_bg_color"
+    app:cardCornerRadius="@dimen/_4sdp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="false">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/_3sdp"
+        android:background="@color/app_bg_color"
+        android:gravity="center_vertical">
+
+        <View
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@color/grey_30"
+            app:cornerRadius="@dimen/_4sdp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toEndOf="@+id/imageView"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@color/grey_30"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                tools:ignore="RtlSymmetry" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:background="@color/grey_30"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/viewDetail"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="8dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_3sdp"
+            android:background="@color/grey_30"
+            tools:ignore="RtlSymmetry" />
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

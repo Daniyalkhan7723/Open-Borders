@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="ga_trackingId">G-1NRW6063ZN</string>
+    <bool name="ga_autoActivityTracking">true</bool>
+
+</selector>

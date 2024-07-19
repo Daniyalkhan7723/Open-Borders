@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <corners android:radius="1dp" />
+    <stroke
+        android:width="1dp"
+        android:color="@color/app_icon_bg_color_brown" />
+    <gradient
+        android:angle="270"
+        android:centerColor="@color/app_icon_bg_color_brown_light"
+        android:endColor="@color/app_icon_bg_color_brown_light"
+        android:startColor="@color/app_icon_bg_color_brown_light" />
+    <size
+        android:width="30dp"
+        android:height="30dp" />
+</shape>

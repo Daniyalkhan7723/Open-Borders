@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_color"
+    android:orientation="vertical"
+    tools:context=".views.fragments.authentication.login.EnterEmailFragment">
+
+    <include
+        android:id="@+id/auth_toolbar_id"
+        layout="@layout/auth_toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/email"
+            style="@style/login_text_label_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="@string/email" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_et"
+            style="@style/login_edit_text_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/catherine_shaw_gmail_com"
+            android:inputType="textWebEmailAddress"
+            android:maxLength="60"
+            android:paddingEnd="@dimen/_10sdp"
+            tools:ignore="RtlSymmetry" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/errorEmail_tv"
+            style="@style/style_error_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/send_email_btn_id"
+        style="@style/button_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/grotesk_pro_normal"
+        android:text="Send"
+        android:textSize="@dimen/_10ssp" />
+
+</LinearLayout>

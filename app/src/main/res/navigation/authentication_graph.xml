@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/authentication_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.open.borders.views.fragments.authentication.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/login_fragment">
+
+<!--        <argument-->
+<!--            android:name="type"-->
+<!--            app:argType="string"-->
+<!--            app:nullable="true" />-->
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/right_to_left"
+            app:popEnterAnim="@anim/left_to_right" />
+        <action
+            android:id="@+id/action_loginFragment_to_enterEmailFragment"
+            app:destination="@id/enterEmailFragment"
+            app:enterAnim="@anim/right_to_left"
+            app:popEnterAnim="@anim/left_to_right" />
+        <action
+            android:id="@+id/action_loginFragment_to_OTPFragment"
+            app:destination="@id/OTPFragment"
+            app:enterAnim="@anim/right_to_left"
+            app:popEnterAnim="@anim/left_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.open.borders.views.fragments.authentication.signUp.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/sign_up_fragment">
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/left_to_right" />
+        <action
+            android:id="@+id/action_signUpFragment_to_OTPFragment"
+            app:destination="@id/OTPFragment"
+            app:enterAnim="@anim/right_to_left"
+            app:popEnterAnim="@anim/left_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.open.borders.views.fragments.authentication.login.OTPFragment"
+        android:label="OTPFragment"
+        tools:layout="@layout/fragment_o_t_p">
+        <argument
+            android:name="email"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_OTPFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/left_to_right" />
+        <action
+            android:id="@+id/action_OTPFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment"
+            app:enterAnim="@anim/right_to_left"
+            app:popEnterAnim="@anim/left_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterEmailFragment"
+        android:name="com.open.borders.views.fragments.authentication.login.EnterEmailFragment"
+        android:label="EnterEmailFragment"
+        tools:layout="@layout/fragment_enter_email">
+        <action
+            android:id="@+id/action_enterEmailFragment_to_OTPFragment"
+            app:destination="@id/OTPFragment"
+            app:enterAnim="@anim/right_to_left"
+            app:popEnterAnim="@anim/left_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.open.borders.views.fragments.authentication.login.ChangePasswordFragment"
+        android:label="ChangePasswordFragment"
+        tools:layout="@layout/fragment_change_password">
+        <action
+            android:id="@+id/action_changePasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/left_to_right" />
+        <argument
+            android:name="email"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+</navigation>

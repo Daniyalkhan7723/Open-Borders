@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="@dimen/_10sdp"
+    android:layout_marginVertical="@dimen/_20sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    android:background="@color/app_bg_color"
+    android:backgroundTint="@null">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/ic_splash_logo" />
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="@dimen/_13sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:src="@drawable/ic_evaluation_cross" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/terms_check"
+        android:layout_below="@id/imageView"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <LinearLayout
+            android:id="@+id/layoutMain"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+
+
+            <!--        <com.facebook.shimmer.ShimmerFrameLayout-->
+            <!--            android:id="@+id/shimmerFrameLayout"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:orientation="vertical">-->
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="@dimen/_5sdp"-->
+            <!--                android:layout_marginHorizontal="@dimen/_15sdp"-->
+            <!--                android:orientation="vertical">-->
+
+            <!--                <include layout="@layout/consultation_shimmer_layout" />-->
+
+            <!--                <include layout="@layout/consultation_shimmer_layout" />-->
+
+            <!--                <include layout="@layout/consultation_shimmer_layout" />-->
+
+            <!--                <include layout="@layout/consultation_shimmer_layout" />-->
+
+            <!--                <include layout="@layout/consultation_shimmer_layout" />-->
+
+            <!--                <include layout="@layout/consultation_shimmer_layout" />-->
+
+            <!--                <include layout="@layout/consultation_shimmer_layout" />-->
+
+            <!--            </LinearLayout>-->
+
+            <!--        </com.facebook.shimmer.ShimmerFrameLayout>-->
+
+
+            <com.open.borders.thirdPartyModules.htmltextview.HtmlTextView
+                android:id="@+id/termAndCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:fontFamily="@font/grotesk_pro_light"
+                android:lineSpacingExtra="@dimen/_2sdp"
+                android:textColor="@color/black"
+                android:textColorLink="@color/link_color"
+                android:textSize="@dimen/_8ssp" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <CheckBox
+        android:id="@+id/terms_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:background="@drawable/terms_and_condition_bg"
+        android:buttonTint="@color/white"
+        android:gravity="center|start"
+        android:paddingHorizontal="@dimen/_3sdp"
+        android:paddingVertical="@dimen/_5sdp"
+        android:text="@string/i_agree"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

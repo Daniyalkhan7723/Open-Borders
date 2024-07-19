@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/questionShimmerId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_bg_color"
+    tools:context=".views.fragments.guide.guideQuestions.GuideQuestionsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/app_bg_color"
+        android:layout_marginHorizontal="@dimen/_5sdp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/grey_30" />
+
+        <View
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="20sp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/grey_30" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/grey_30" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/grey_30" />
+
+        <View
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="20sp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@color/grey_30" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:background="@color/grey_30" />
+
+    </LinearLayout>
+
+</LinearLayout>

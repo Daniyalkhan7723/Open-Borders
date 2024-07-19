@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activities.navigationHost.HomeHost">
+
+    <include
+        android:id="@+id/home_toolbar_id"
+        layout="@layout/home_toolbar_layout" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/home_nav_host_fragment_id"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_below="@+id/home_toolbar_id"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/home_nav_graph" />
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/two_sided_drawable_bg"
+        android:elevation="@dimen/panel_elevation"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/two_sided_drawable_bg"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:id="@+id/guide_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/guideImageView"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_guide_fill" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/guide_title"
+                    style="@style/bottomsheet_label_style_potrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:text="@string/guide" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/consultation_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/consultation_imageview"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_consult" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/consultationTitle"
+                    style="@style/bottomsheet_label_style_potrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:text="@string/consultation" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/servicesLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/services_imageview"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_flat_fee" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/services_title"
+                    style="@style/bottomsheet_label_style_potrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:text="@string/services" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/news_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/news_imageview"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_news" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/newsTitleTv"
+                    style="@style/bottomsheet_label_style_potrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/news"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/accountLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/accountImage"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_account_new" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/accountTitle"
+                    style="@style/bottomsheet_label_style_potrate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/account"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_1sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

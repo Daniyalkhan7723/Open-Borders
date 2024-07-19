@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="false"
+    tools:context=".views.fragments.flatFee.FlatFeeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/popup_background"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--        <com.google.android.material.textview.MaterialTextView-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:layout_marginTop="@dimen/_10sdp"-->
+            <!--            android:fontFamily="@font/grotesk_pro_bold"-->
+            <!--            android:gravity="center"-->
+            <!--            android:text="@string/schedule_a_consultation"-->
+            <!--            android:textColor="@color/black"-->
+            <!--            android:textSize="18sp" />-->
+
+            <com.open.borders.thirdPartyModules.htmltextview.HtmlTextView
+                android:id="@+id/tvConsultingCharges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:elevation="@dimen/_2sdp"
+                android:fontFamily="@font/grotesk_pro_light"
+                android:gravity="start"
+                android:textColor="@color/black_80"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/brown_40" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/grotesk_pro_normal"
+                android:text="@string/consultation_with"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="16sp" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerFrameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/consultation_shimmer_layout" />
+
+                    <include layout="@layout/consultation_shimmer_layout" />
+
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/consultationWithRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                android:visibility="gone"
+                tools:itemCount="2"
+                tools:listitem="@layout/consultation_with_layout" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/consultationType_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/grotesk_pro_normal"
+                android:text="@string/consultation_type"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerFrameLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/consultation_shimmer_layout" />
+
+                    <include layout="@layout/consultation_shimmer_layout" />
+
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/consultationTypeRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                android:visibility="gone"
+                tools:itemCount="2"
+                tools:listitem="@layout/consultation_type_layout" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/timeSlotLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/timeslotTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/grotesk_pro_normal"
+                    android:text="Time Slots:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/timeZoneTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:fontFamily="@font/grotesk_pro_light"
+                    android:text="Your Time Zone"
+                    android:textColor="@color/black_80"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@+id/spinnerFrameLayout"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <FrameLayout
+                    android:id="@+id/spinnerFrameLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginHorizontal="@dimen/_30sdp"
+                    android:layout_marginVertical="@dimen/_25sdp"
+                    android:background="@drawable/layout_bg"
+                    android:paddingHorizontal="@dimen/_2sdp"
+                    app:layout_constraintBottom_toTopOf="@+id/previousTv"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/timeslotTv">
+
+                    <Spinner
+                        android:id="@+id/timeZoneSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:popupElevation="0dp"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_spinner"
+                        app:tint="@color/white" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/previousTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_back_arrow"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="@string/previous_"
+                    android:textSize="@dimen/_6sdp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinnerFrameLayout" />
+
+                <TextView
+                    android:id="@+id/moreTimeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_next_arrow"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="@string/more_times"
+                    android:textSize="@dimen/_6sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/previousTv" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmerFrameLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/consultation_shimmer_layout" />
+
+                    <include layout="@layout/consultation_shimmer_layout" />
+
+
+                </LinearLayout>
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/acuityRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:overScrollMode="never"
+                android:paddingBottom="@dimen/_5sdp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbars="horizontal"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:listitem="@layout/acuity_item_layout" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/noDataView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:fontFamily="@font/grotesk_pro_bold"
+                android:text="No TimeSlots Found"
+                android:textColor="@color/black_80"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/accountDetailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvInformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:fontFamily="@font/grotesk_pro_normal"
+                    android:text="@string/your_information"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/consultation_text_label_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/first_name" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/fistNameEt"
+                            style="@style/login_edit_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:maxLength="60"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:textColor="@color/black_80"
+                            tools:ignore="RtlSymmetry" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/errorFirstName_tv"
+                            style="@style/style_error_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            style="@style/consultation_text_label_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/last_name" />
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/lastNameEt"
+                            style="@style/login_edit_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="text"
+                            android:maxLength="60"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:textColor="@color/black_80"
+                            tools:ignore="RtlSymmetry" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/consultation_text_label_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/phone_number" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/countryCodeList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:gravity="start"
+                        app:ccpDialog_allowSearch="true"
+                        app:ccpDialog_cornerRadius="@dimen/_5sdp"
+                        app:ccpDialog_keyboardAutoPopup="false"
+                        app:ccpDialog_searchEditTextTint="@color/white"
+                        app:ccpDialog_showCloseIcon="false"
+                        app:ccpDialog_showPhoneCode="true"
+                        app:ccpDialog_showTitle="false"
+                        app:ccp_areaCodeDetectedCountry="false"
+                        app:ccp_autoDetectCountry="false"
+                        app:ccp_autoDetectLanguage="false"
+                        app:ccp_defaultLanguage="ENGLISH"
+                        app:ccp_defaultNameCode="US"
+                        app:ccp_showArrow="true"
+                        app:ccp_showFlag="false"
+                        app:ccp_showNameCode="false"
+                        app:ccp_showPhoneCode="true"
+                        app:ccp_textGravity="LEFT"
+                        app:ccp_textSize="16sp" />
+
+                    <com.open.borders.thirdPartyModules.maskededittext.MaskedEditText
+                        android:id="@+id/etPhone"
+                        style="@style/login_edit_text_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:inputType="numberDecimal"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:textSize="16dp"
+                        app:mask="### - ### - #####"
+                        tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
+                </LinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/phoneErrorTv"
+                    style="@style/style_error_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/consultation_text_label_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/email" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailEt"
+                    style="@style/login_edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="60"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:textColor="@color/black_80"
+                    tools:ignore="RtlSymmetry" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/emailErrorTv"
+                    style="@style/style_error_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/consultation_text_label_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/street_address" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/streetAddressEt"
+                    style="@style/login_edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="60"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:textColor="@color/black_80"
+                    tools:ignore="RtlSymmetry" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/errorStreetTv"
+                    style="@style/style_error_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/consultation_text_label_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/city" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/cityEt"
+                    style="@style/login_edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="60"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:textColor="@color/black_80"
+                    tools:ignore="RtlSymmetry" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/errorCityTv"
+                    style="@style/style_error_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/consultation_text_label_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/state" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/stateEt"
+                    style="@style/login_edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="60"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:textColor="@color/black_80"
+                    tools:ignore="RtlSymmetry" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/errorStateTv"
+                    style="@style/style_error_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/consultation_text_label_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zip_and_postal_code" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/zipEt"
+                    style="@style/login_edit_text_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLength="60"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:textColor="@color/black_80"
+                    tools:ignore="RtlSymmetry" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/errorZipTv"
+                    style="@style/style_error_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/consultation_text_label_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/country" />
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    app:ccpDialog_allowSearch="true"
+                    app:ccpDialog_cornerRadius="@dimen/_5sdp"
+                    app:ccpDialog_searchEditTextTint="@color/white"
+                    app:ccpDialog_showCloseIcon="false"
+                    app:ccpDialog_showNameCode="false"
+                    app:ccpDialog_showPhoneCode="false"
+                    app:ccpDialog_showTitle="false"
+                    app:ccp_areaCodeDetectedCountry="false"
+                    app:ccp_autoDetectCountry="false"
+                    app:ccp_autoDetectLanguage="false"
+                    app:ccp_defaultLanguage="ENGLISH"
+                    app:ccp_defaultNameCode="US"
+                    app:ccp_showArrow="true"
+                    app:ccp_showFlag="false"
+                    app:ccp_showFullName="true"
+                    app:ccp_showNameCode="false"
+                    app:ccp_showPhoneCode="false"
+                    app:ccp_textGravity="LEFT"
+                    app:ccp_textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="@dimen/_3sdp"
+                    android:background="@color/black"
+                    android:backgroundTint="#4D827564"
+                    app:layout_constraintTop_toBottomOf="@id/countryName" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/errorCountry"
+                    style="@style/style_error_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/consultation_text_label_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/what_kind_of_immigration_help_do_you_need_please_provide_as_many_details_as_possible"
+                    android:textSize="@dimen/_6ssp" />
+
+                <EditText
+                    android:id="@+id/descriptionEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:background="@drawable/edittext_box_bg"
+                    android:backgroundTint="@null"
+                    android:gravity="start"
+                    android:lines="6"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/black_80" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/errorDetailTv"
+                    style="@style/style_error_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp" />
+
+                <CheckBox
+                    android:id="@+id/showPasswordCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:buttonTint="@color/brown_new"
+                    android:text="@string/would_you_like_to_create_an_account_to_save_your_data_and_review_orders"
+                    android:textColor="@color/label_color"
+                    android:textSize="@dimen/_6ssp" />
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/terms_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:buttonTint="@color/brown_new"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:text="@string/i_agree_with_terms_and_conditions_consultation"
+                    android:textColor="@color/label_color"
+                    android:textSize="@dimen/_6ssp" />
+
+                <LinearLayout
+                    android:id="@+id/passwordLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/login_text_label_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/password" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/signupPasswordTv"
+                            style="@style/login_edit_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="textWebPassword" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/signUpPassword_eye"
+                            android:layout_width="@dimen/_9sdp"
+                            android:layout_height="@dimen/_9sdp"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:src="@drawable/eye_icon_hide"
+                            android:tint="@color/guest_btn_color" />
+
+                    </FrameLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/errorPassword_tv"
+                        style="@style/style_error_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        style="@style/login_text_label_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/confirm_password" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/signup_confirm_password_tv"
+                            style="@style/login_edit_text_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textWebPassword" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/signUp_confirm_password_eye"
+                            android:layout_width="@dimen/_9sdp"
+                            android:layout_height="@dimen/_9sdp"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:src="@drawable/eye_icon_hide"
+                            android:tint="@color/guest_btn_color" />
+                    </FrameLayout>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/errorConfirmPassword_tv"
+                        style="@style/style_error_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginHorizontal="@dimen/_20sdp"-->
+                <!--                android:layout_marginTop="@dimen/_7sdp"-->
+                <!--                android:orientation="horizontal">-->
+
+                <!--                <com.google.android.material.textview.MaterialTextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:fontFamily="@font/grotesk_pro_bold"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="Consultation_Fee"-->
+                <!--                    android:textColor="@color/black_80"-->
+                <!--                    android:textSize="14sp"-->
+                <!--                    android:textStyle="bold" />-->
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="@dimen/_20sdp"-->
+                <!--                    android:layout_weight="2"-->
+                <!--                    android:fontFamily="@font/grotesk_pro_bold"-->
+                <!--                    android:gravity="start"-->
+                <!--                    android:text="$ 300"-->
+                <!--                    android:textColor="@color/black_80"-->
+                <!--                    android:textSize="14sp"-->
+                <!--                    android:textStyle="bold" />-->
+                <!--            </LinearLayout>-->
+
+
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginHorizontal="@dimen/_20sdp"-->
+                <!--                android:layout_marginTop="@dimen/_20sdp"-->
+                <!--                android:layout_marginBottom="@dimen/_25sdp"-->
+                <!--                android:gravity="center"-->
+                <!--                android:orientation="horizontal">-->
+
+                <!--                <RadioGroup-->
+                <!--                    android:id="@+id/radio_group"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <com.google.android.material.radiobutton.MaterialRadioButton-->
+                <!--                        android:id="@+id/radioPhoneCall"-->
+                <!--                        android:layout_width="0dp"-->
+                <!--                        android:layout_height="@dimen/_20sdp"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:buttonTint="@color/app_icon_bg_color_brown"-->
+                <!--                        android:fontFamily="@font/grotesk_pro_normal"-->
+                <!--                        android:text="@string/phone_call"-->
+                <!--                        android:textColor="@color/black_80"-->
+                <!--                        android:textColorHint="@color/black_80" />-->
+
+                <!--                    <com.google.android.material.radiobutton.MaterialRadioButton-->
+                <!--                        android:id="@+id/radioVideoCall"-->
+                <!--                        android:layout_width="0dp"-->
+                <!--                        android:layout_height="@dimen/_20sdp"-->
+                <!--                        android:layout_gravity="center"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:buttonTint="@color/app_icon_bg_color_brown"-->
+                <!--                        android:fontFamily="@font/grotesk_pro_normal"-->
+                <!--                        android:text="@string/video_call"-->
+                <!--                        android:textColor="@color/black_80" />-->
+                <!--                </RadioGroup>-->
+
+                <!--            </LinearLayout>-->
+
+                <!--            <LinearLayout-->
+                <!--                android:id="@+id/consultant1"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="@dimen/_35sdp"-->
+                <!--                android:layout_marginHorizontal="@dimen/_20sdp"-->
+                <!--                android:layout_marginTop="@dimen/_10sdp"-->
+                <!--                android:layout_marginBottom="@dimen/_15sdp"-->
+                <!--                android:background="@drawable/bg_popup">-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/with"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="@dimen/_20sdp"-->
+                <!--                    android:layout_marginVertical="@dimen/_7sdp"-->
+                <!--                    android:layout_marginStart="@dimen/_7sdp"-->
+                <!--                    android:layout_weight="0.2"-->
+                <!--                    android:fontFamily="@font/grotesk_pro_normal"-->
+                <!--                    android:gravity="center_vertical"-->
+                <!--                    android:text="With"-->
+                <!--                    android:textColor="@color/black_80"-->
+                <!--                    android:textSize="@dimen/_10ssp" />-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/consultantTv1"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="@dimen/_20sdp"-->
+                <!--                    android:layout_marginVertical="@dimen/_7sdp"-->
+                <!--                    android:layout_marginEnd="@dimen/_7sdp"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:fontFamily="@font/grotesk_pro_normal"-->
+                <!--                    android:gravity="center_vertical"-->
+                <!--                    android:text="Shahid Haque"-->
+                <!--                    android:textColor="@color/black_80"-->
+                <!--                    android:textSize="@dimen/_10ssp" />-->
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/selectImage1"-->
+                <!--                    android:layout_width="25dp"-->
+                <!--                    android:layout_height="25dp"-->
+                <!--                    android:layout_gravity="center_vertical"-->
+                <!--                    android:layout_marginEnd="@dimen/_10sdp"-->
+                <!--                    android:src="@drawable/ic_tick"-->
+                <!--                    android:visibility="gone" />-->
+
+
+                <!--            </LinearLayout>-->
+
+                <!--            <TextView-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:gravity="center"-->
+                <!--                android:text="or"-->
+                <!--                android:textColor="@color/black_80"-->
+                <!--                android:textSize="@dimen/_14sdp" />-->
+
+                <!--            <LinearLayout-->
+                <!--                android:id="@+id/consultant2"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="@dimen/_35sdp"-->
+                <!--                android:layout_marginHorizontal="@dimen/_20sdp"-->
+                <!--                android:layout_marginTop="@dimen/_15sdp"-->
+                <!--                android:layout_marginBottom="@dimen/_10sdp"-->
+                <!--                android:background="@drawable/bg_popup">-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/with1"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="@dimen/_20sdp"-->
+                <!--                    android:layout_marginVertical="@dimen/_7sdp"-->
+                <!--                    android:layout_marginStart="@dimen/_7sdp"-->
+                <!--                    android:layout_weight="0.2"-->
+                <!--                    android:fontFamily="@font/grotesk_pro_normal"-->
+                <!--                    android:gravity="center_vertical"-->
+                <!--                    android:text="With"-->
+                <!--                    android:textColor="@color/black_80"-->
+                <!--                    android:textSize="@dimen/_10ssp" />-->
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/consultantTv2"-->
+                <!--                    android:layout_width="0dp"-->
+                <!--                    android:layout_height="@dimen/_20sdp"-->
+                <!--                    android:layout_marginVertical="@dimen/_7sdp"-->
+                <!--                    android:layout_marginEnd="@dimen/_7sdp"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:fontFamily="@font/grotesk_pro_normal"-->
+                <!--                    android:gravity="center_vertical"-->
+                <!--                    android:text="Erick Valencia"-->
+                <!--                    android:textColor="@color/black_80"-->
+                <!--                    android:textSize="@dimen/_10ssp" />-->
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/selectImage2"-->
+                <!--                    android:layout_width="25dp"-->
+                <!--                    android:layout_height="25dp"-->
+                <!--                    android:layout_gravity="center_vertical"-->
+                <!--                    android:layout_marginEnd="@dimen/_10sdp"-->
+                <!--                    android:src="@drawable/ic_tick"-->
+                <!--                    android:visibility="gone" />-->
+
+                <!--            </LinearLayout>-->
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/continueButton"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="@dimen/_35sdp"-->
+                <!--                android:layout_marginHorizontal="@dimen/_20sdp"-->
+                <!--                android:layout_marginTop="@dimen/_20sdp"-->
+                <!--                android:layout_marginBottom="@dimen/_15sdp"-->
+                <!--                android:background="@drawable/button_bg"-->
+                <!--                android:gravity="center"-->
+                <!--                android:text="Continue"-->
+                <!--                android:textColor="@color/white"-->
+                <!--                android:textSize="@dimen/_14sdp" />-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvBG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:elevation="0dp"
+            app:cardBackgroundColor="@color/app_bg_color"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@id/view"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:layout_marginVertical="@dimen/_5sdp">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_34sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/_36sdp"
+                    android:background="@drawable/bg_icons_brown"
+                    android:elevation="@dimen/_2sdp"
+                    android:fontFamily="@font/grotesk_pro_light"
+                    android:gravity="center"
+                    android:text="@string/date"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@+id/tvTime"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_34sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="@dimen/_36sdp"
+                    android:background="@drawable/bg_icons_brown_light"
+                    android:elevation="@dimen/_2sdp"
+                    android:fontFamily="@font/grotesk_pro_light"
+                    android:gravity="center"
+                    android:text="@string/time"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvDate"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button_start_consultation"
+                    style="@style/counsultaion_button_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:backgroundTint="@color/brown_new"
+                    android:fontFamily="@font/grotesk_pro_normal"
+                    android:text="@string/start_consultation"
+                    android:textSize="@dimen/_7ssp"
+                    app:cornerRadius="@dimen/_4sdp"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

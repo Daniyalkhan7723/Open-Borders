@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activities.packegeDetail.PackageDetailActivity">
+
+    <include
+        android:id="@+id/toolbarId"
+        layout="@layout/home_toolbar_layout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout3"
+        android:layout_below="@id/toolbarId"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:orientation="vertical">
+
+            <com.rishabhharit.roundedimageview.RoundedImageView
+                android:id="@+id/mImageView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170sdp"
+                android:scaleType="centerCrop"
+                app:cornerRadius="@dimen/_5sdp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/grotesk_pro_normal"
+                android:text="@string/retainer_payment_one_time_payment"
+                android:textColor="@color/black_80"
+                android:textSize="20sp"
+                tools:ignore="MissingConstraints" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvFromAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="@string/from_10_00"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <com.open.borders.thirdPartyModules.htmltextview.HtmlTextView
+                android:id="@+id/packageTvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/grotesk_pro_light"
+                android:lineSpacingExtra="@dimen/_3sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorLink="@color/link_color"
+                android:textSize="@dimen/_7ssp" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:weightSum="2">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvAmount"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/grotesk_pro_normal"
+                        android:gravity="start"
+                        android:text="@string/amount"
+                        android:textColor="@color/black_70"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvQuantity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/grotesk_pro_normal"
+                        android:gravity="start"
+                        android:text="@string/quantity"
+                        android:textColor="@color/black_70"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout1"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:weightSum="2">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvAmountOptions"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/layout_bg"
+                        android:fontFamily="@font/grotesk_pro_light"
+                        android:gravity="center"
+                        android:paddingHorizontal="@dimen/_2sdp"
+                        android:paddingVertical="@dimen/_5sdp"
+                        android:singleLine="true"
+                        android:text="@string/_15_000_month"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_7ssp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/pricePop"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:focusable="false"
+                        android:drawableEnd="@drawable/ic_spinner"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:background="@drawable/layout_bg"
+                        android:fontFamily="@font/grotesk_pro_light"
+                        android:gravity="center"
+                        android:paddingHorizontal="@dimen/_2sdp"
+                        android:singleLine="true"
+                        android:text="Price"
+                        android:visibility="gone"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_7ssp" />
+
+                    <FrameLayout
+                        android:id="@+id/spinnerFrameLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_20sdp"                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:paddingHorizontal="@dimen/_2sdp"
+                        android:background="@drawable/layout_bg">
+
+                        <Spinner
+                            android:id="@+id/spinner_sample"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dropdown"
+                            android:gravity="center"
+                            android:popupElevation="0dp"
+                            android:background="@null"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end|bottom"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_spinner"
+                            app:tint="@color/white"/>
+
+                    </FrameLayout>
+
+
+                    <EditText
+                        android:id="@+id/quentityEt"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/layout_bg"
+                        android:fontFamily="@font/grotesk_pro_light"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:maxLength="3"
+                        android:inputType="numberSigned"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_7ssp" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_4sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="14dp"
+                    android:elevation="0dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="false">
+
+                    <LinearLayout
+                        android:id="@+id/buttonLayoutId"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:background="@color/black"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_width="@dimen/_15sdp"
+                            android:src="@drawable/ic_google"
+                            android:layout_marginEnd="@dimen/_7sdp"
+                            android:visibility="gone"
+                            android:text="@string/buy_this_service_package" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/buyTv"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_7ssp"
+                            android:fontFamily="@font/grotesk_pro_normal"
+                            android:text="@string/buy_this_service_package" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+</RelativeLayout>
